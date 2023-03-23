@@ -35,6 +35,6 @@ bef1 = aft1 - bef1;
 aft2 = aft2 + bef2;
 bef2 = aft2 - bef2;
 }
-orintf("\n");
+printf("\n");
 return (0);
 }
