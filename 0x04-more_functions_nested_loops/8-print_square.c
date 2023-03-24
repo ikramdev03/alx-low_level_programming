@@ -9,10 +9,15 @@
 void print_square(int size);
 int row, colone;
 {
+	if (size <= 0)
+		_putchar('\n');
+
 	for (row = 1; row <= size; row++)
 	{
 		for (colone = 1; colone <= size; colone++)
+		{
 			_putchar ('#');
+		}
 		_putchar ('\n');
 	}
-
+}
