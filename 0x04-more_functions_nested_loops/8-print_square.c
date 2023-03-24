@@ -11,15 +11,14 @@ void print_square(int size);
 
 int row, colone;
 {
-	if (size <= 0)
-		_putchar('\n');
-
-	for (row = 0; row <= size; row++)
-	{
-		for (colone = 0; colone <= (size); colone++)
-		{
-			_putchar ('#');
-		}
-		_putchar ('\n');
-	}
+if (size <= 0)
+_putchar('\n');
+for (row = 0; row <= size; row++)
+{
+for (colone = 0; colone <= (size); colone++)
+{
+_putchar ('#');
+}
+_putchar ('\n');
+}
 }
