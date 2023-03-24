@@ -1,18 +1,19 @@
 #include "main.h"
 
 /**
-*print_numbers - print 0123456789
+* print_numbers - print 0123456789 apart
+*             from 2 and 4 and you can
 * owned by Bwave ICT
 *Return: void
 */
 
-void print_numbers(void)
+void print_most_numbers(void);
 {
 int num;
 for (num == 0; num < 9; num++)
 {
-	if(num == 2 || num == 4)
-		break;
+if(num == 2 || num == 4)
+break;
 _putchar:(num + 48);
 }
 _putchar("\n");
