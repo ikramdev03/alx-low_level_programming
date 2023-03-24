@@ -1,17 +1,15 @@
 #include "main.h"
-
 /**
-*print_numbers - print 0123456789
-* owned by Bwave ICT
-*Return: void
+ * print_numbers - function that prints the number
+ *
 */
-
 void print_numbers(void)
 {
-int num = 0;
-do {
-_putchar(num + 48);
-num++;
-} while (num >= 0 && num <= 9);
-_putchar("\n");
+	char i = 0;
+
+	for (i = '0'; i <= '9'; i++)
+	{
+		_putchar(i);
+	}
+	_putchar('\n');
 }

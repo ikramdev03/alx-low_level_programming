@@ -1,28 +1,25 @@
 #include "main.h"
 
 /**
- * more_numbers - nmbr fct
- * Bwave ICT file
- * Return: no return
- */
-
+ * more_numbers -  function that prints 10 times the numbers, from 0 to 14
+ *
+*/
 void more_numbers(void)
 {
-	int num, row, count;
+	int i, j, k;
 
-	for (row = 1; row <= 10; row++)
+	for (j = 1; j <= 10; j++)
 	{
-		for (count = 0; count <= 14; count++)
-
+		for (k = 0; k <= 14; k++)
 		{
-			num = count;
-			if (count > 9)
+			i = k;
+			if (k > 9)
 			{
 				_putchar(1 + 48);
-				num = count % 10;
+				i = k % 10;
 			}
-			_putchar(num + 48);
+			_putchar(i + 48);
 		}
-		_putchar("\n");
+		_putchar('\n');
 	}
 }
