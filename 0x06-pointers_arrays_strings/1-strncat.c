@@ -2,6 +2,8 @@
 
 /**
  * _strncat - concatenates two strings
+ * using at most n bytes from src
+ * @n: input value
  * @dest: copy to
  * @src: copy from
  * Return: pointer to dest
