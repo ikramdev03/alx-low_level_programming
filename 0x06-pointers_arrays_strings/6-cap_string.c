@@ -5,7 +5,7 @@
  * @str: the string
  * Return: the capitalizes string
  */
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
 	int i = 0;
 
