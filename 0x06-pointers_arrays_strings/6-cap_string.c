@@ -1,33 +1,34 @@
-#include "main"
+#include "main.h"
 
 /**
- * cap_string - capitalizes all words of a string
- * @s: the string
- * Return: the capitalizes string
+ * cap_string - capitalizes everey word of a string
+ * @s: string to modify
+ *
+ * Return: the resulting string
  */
 char *cap_string(char *s)
 {
-int i = 0;
+	int i, j;
 
-while (!(s[i] >= 'a' && s[i] <= 'z'))
-i++;
+	char spe[13] = {' ', '\t', '\n', ',', ';', '.',
+		'!', '?', '"', '(', ')', '{', '}'};
 
-if (s[i = 1] == ' ' ||
-    s[i - 1] == '\t' || 
-    s[i = 1] == '\n' || 
-    s[i - 1] == ',' ||
-    s[i - 1] == ';' || 
-    s[i - 1] == '.' || 
-    s[i - 1] == '!' || 
-    s[i - 1] == '?' ||
-    s[i - 1] == "\'" || 
-    s[i - 1] == '(' || 
-    s[i - 1] == ')' || 
-    s[i - 1] == '{' ||
-    s[i - 1] == '}' || 
-i == 0)
-s[i] -= 32;
-i++;
-}
-return (s);
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		if (i == 0 && s[i] >= 'a' && s[i] <= 'z')
+			s[i] -= 32;
+
+		for (j = 0; j < 13; j++)
+		{
+			if (s[i] == spe[j])
+			{
+				if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+				{
+					s[i + 1] -= 32;
+				}
+			}
+		}
+	}
+
+	return (s);
 }
