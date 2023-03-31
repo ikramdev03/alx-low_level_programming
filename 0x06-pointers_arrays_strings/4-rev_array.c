@@ -5,7 +5,7 @@
  * @a: array to be reversed
  * @n: number of elements in the array
  */
-void reverse_array(int *t, int n)
+void reverse_array(int *a, int n)
 {
 	int i;
 	int temp;
@@ -13,8 +13,8 @@ void reverse_array(int *t, int n)
 	for (i = 0; i < n; i++)
 	{
 		n--;
-		temp = t[i];
-		t[i] = t[n];
-		t[n] = temp;
+		temp = a[i];
+		a[i] = a[n];
+		a[n] = temp;
 	}
 }
