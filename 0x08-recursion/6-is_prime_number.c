@@ -12,7 +12,7 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	return (is_prime_number(n, n - 1));
+	return (acual_prime(n, n - 1));
 }
 /**
  * is_prime_number - calculates if a number prime recursively
@@ -22,7 +22,7 @@ int is_prime_number(int n)
  *
  * Return: 1 if n is a prime number, 0 if not
  */
-int is_prime_number(int n, int i)
+int acual_prime(int n, int i)
 {
 	if (i == 0)
 	{
@@ -32,5 +32,5 @@ int is_prime_number(int n, int i)
 	{
 		return (0);
 	}
-	return (is_prime_number(n, i - 1));
+	return (acual_prime(n, i - 1));
 }
