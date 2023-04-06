@@ -4,7 +4,8 @@
  * _sqrt_recursion - returns the natural square root of a number
  * @n: numbre to calculate the square root of
  *
- * Return: resulting the square root
+ * Return: resulting the square root n
+ * if n does not have a natural sqaart root, the function should return -1
  */
 int _sqrt_recursion(int n)
 {
@@ -12,5 +13,5 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	return (_sqrt_recursion(n, 0));
+	return (number(1, n));
 }
