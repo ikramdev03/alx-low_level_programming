@@ -12,7 +12,7 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	return (_prime_number(n, n - 1));
+	return (is_prime_number(n, n - 1));
 }
 /**
  * is_prime_number - calculates if a number prime recursively
@@ -32,5 +32,5 @@ int is_prime_number(int n, int i)
 	{
 		return (0);
 	}
-	return (_prime_number(n, i - 1));
+	return (is_prime_number(n, i - 1));
 }
