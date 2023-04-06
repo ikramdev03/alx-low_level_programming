@@ -12,7 +12,7 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	return (acual_prime(n, n - 1));
+	return (is_prime_number(n, n - 1));
 }
 /**
  * is_prime_number - calculates if a number prime recursively
