@@ -1,5 +1,7 @@
 #include "main.h"
 
+int number(int n, int root);
+
 /**
  * number - help find the square root of natual squareroot number.
  * @n: naturalnumber starting from 1
@@ -17,7 +19,6 @@ int number(int n, int root)
 		return (-1);
 	return (1 * number + number(n + 1, root));
 }
-
 /**
  * _sqrt_recursion - returns the natural square root of a number
  * @n: number to calculate the square root of
@@ -28,8 +29,6 @@ int number(int n, int root)
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
-	{
 		return (-1);
-	}
 	return (number(1, n));
 }
