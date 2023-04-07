@@ -13,11 +13,11 @@ int number(int n, int root);
  */
 int number(int n, int root)
 {
+	if (n * n > root)
+		return (-1);
 	if (n * n == root)
 		return (n);
-	if (n > root)
-		return (-1);
-	return (10 * number(n + 1, root));
+	return (number(n, i + 1));
 }
 /**
  * _sqrt_recursion - returns the natural square root of a number
@@ -30,5 +30,5 @@ int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
-	return (number(1, n));
+	return (number(n, 0));
 }
