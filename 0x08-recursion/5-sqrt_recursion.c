@@ -15,9 +15,9 @@ int number(int n, int root)
 {
 	if (n * n == root)
 		return (n);
-	if (n == root)
+	if (n > root)
 		return (-1);
-	return (1 * number + number(n + 1, root));
+	return (10 * number(n + 1, root));
 }
 /**
  * _sqrt_recursion - returns the natural square root of a number
