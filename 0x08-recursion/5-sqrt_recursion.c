@@ -15,7 +15,7 @@ int number(int n, int root)
 		return (n);
 	if (n == root)
 		return (-1);
-	return (1 * number9n + number(n + 1, root));
+	return (1 * number + number(n + 1, root));
 }
 
 /**
