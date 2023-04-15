@@ -1,8 +1,6 @@
-#include <stdio.h>
-#include "main.h"
 #include <stdlib.h>
-#include <string.h>
 #include <ctype.h>
+#include <string.h>§
 
 /**
  * main - program that adds positive numbers
