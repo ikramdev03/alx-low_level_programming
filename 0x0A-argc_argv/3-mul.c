@@ -6,7 +6,7 @@
  * main - prints sum of 2 numbers.
  * @argc: number of arguments
  * @argv: array of arguments
- * Return: Always 0 (Success)
+ * Return: Always 0 (Success)- non-zero-fail.
  */
 
 int main(int argc, char *argv[])
@@ -20,8 +20,9 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		printf("Erreur\n");
+		printf("Error\n");
 		return (1);
 	}
+
 	return (0);
 }
