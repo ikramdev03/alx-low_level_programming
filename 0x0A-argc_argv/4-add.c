@@ -50,39 +50,39 @@ int _atoi(char *s)
 }
 
 /**
- * main - program that adds positive numbers
- * @argc: this is the arguments count
- * @argv: this is arguments vector
+ * main - adds two positive number
+ * @argc: number of arguments
+ * @argv: array of arguents
+ *
  * Return: 0 (Success), or 1 (Success)
  */
-
 int main(int argc, char *argv[])
 {
-	int sum = 0, i;
+	int sum, num, i, j, k;
 
-	if (argc > 1)
+	sum = 0;
+
+	for (i = 1; i < argc; i++)
 	{
-		for (i = 1; i < argc; i++)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			int b;
-			char *str;
-
-			str = argv[i];
-			for (b = 0; str[b] != '\0'; b++)
+			if (argv[i][j] > '9' || argv[i][j] < '0')
 			{
-				if (str[b] < 48 || str[b] > 57)
-				{
-					printf("Error\n");
-					return (1);
-
-				}
+				puts("Error");
+				return (1);
 			}
 		}
-		for (i = 1; i < argc; i++)
-		{
-			sum += atoi(argv[i]);
-		}
-		printf("%d\n", sum);
-		return (0);
 	}
+
+	for (k = 1; k < argc; k++)
+	{
+		num = _atoi(argv[k]);
+		if (num >= 0)
+		{
+			sum += num;
+		}
+	}
+
+	printf("%d\n", sum);
+	return (0);
 }
